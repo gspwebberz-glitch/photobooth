@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXUS ARENA | Ultimate Gaming</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND EFFECTS -->
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <!-- HEADER -->
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            NEXUS<span>ARENA</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#games">Games</a>
+            <a href="#featured">Featured</a>
+            <a href="#leaderboard">Leaderboard</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="icon-btn" id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="login-btn" id="loginBtn">
+                <i class="fa-solid fa-user"></i>
+                Login
+            </button>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- SEARCH BOX -->
+    <div class="search-panel" id="searchPanel">
+
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="gameSearch"
+                placeholder="Search your next game..."
+            >
+
+            <button id="closeSearch">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                <span></span>
+                LIVE GAMING UNIVERSE
+            </div>
+
+            <h1>
+                ENTER THE
+                <span>NEXT LEVEL</span>
+            </h1>
+
+            <p>
+                Discover amazing games, challenge your friends,
+                climb the leaderboard and become a legend.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#games" class="primary-btn">
+                    Explore Games
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <button class="secondary-btn" id="watchBtn">
+                    <i class="fa-solid fa-play"></i>
+                    Watch Trailer
+                </button>
+
+            </div>
+
+
+            <div class="hero-stats">
+
+                <div>
+                    <h2>500+</h2>
+                    <p>Games</p>
+                </div>
+
+                <div>
+                    <h2>2M+</h2>
+                    <p>Players</p>
+                </div>
+
+                <div>
+                    <h2>50K+</h2>
+                    <p>Daily Matches</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="gaming-circle circle-1"></div>
+            <div class="gaming-circle circle-2"></div>
+
+            <div class="hero-console">
+
+                <div class="console-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="console-screen">
+
+                    <p>PLAYER READY</p>
+
+                    <h2>NEXUS</h2>
+
+                    <div class="loading-bar">
+                        <span></span>
+                    </div>
+
+                    <small>INITIALIZING GAME WORLD...</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GAME SECTION -->
+    <section class="games-section" id="games">
+
+        <div class="section-header">
+
+            <div>
+                <p class="section-tag">CHOOSE YOUR BATTLE</p>
+                <h2>EXPLORE <span>GAMES</span></h2>
+            </div>
+
+            <div class="game-filters">
+
+                <button class="filter active-filter" data-category="all">
+                    All
+                </button>
+
+                <button class="filter" data-category="action">
+                    Action
+                </button>
+
+                <button class="filter" data-category="racing">
+                    Racing
+                </button>
+
+                <button class="filter" data-category="puzzle">
+                    Puzzle
+                </button>
+
+                <button class="filter" data-category="adventure">
+                    Adventure
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="games-grid" id="gamesGrid">
+
+
+            <!-- GAME 1 -->
+            <article class="game-card" data-category="action">
+
+                <div class="game-image game-bg-1">
+
+                    <div class="game-overlay">
+
+                        <button class="play-game"
+                                data-game="Cyber Strike">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                    <span class="game-tag">ACTION</span>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div>
+                        <h3>CYBER STRIKE</h3>
+                        <p>Futuristic Combat</p>
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.9
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- GAME 2 -->
+            <article class="game-card" data-category="racing">
+
+                <div class="game-image game-bg-2">
+
+                    <div class="game-overlay">
+
+                        <button class="play-game"
+                                data-game="Neon Racer">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                    <span class="game-tag">RACING</span>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div>
+                        <h3>NEON RACER</h3>
+                        <p>Extreme Speed</p>
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.8
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- GAME 3 -->
+            <article class="game-card" data-category="puzzle">
+
+                <div class="game-image game-bg-3">
+
+                    <div class="game-overlay">
+
+                        <button class="play-game"
+                                data-game="Block Master">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                    <span class="game-tag">PUZZLE</span>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div>
+                        <h3>BLOCK MASTER</h3>
+                        <p>Brain Challenge</p>
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.7
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- GAME 4 -->
+            <article class="game-card" data-category="adventure">
+
+                <div class="game-image game-bg-4">
+
+                    <div class="game-overlay">
+
+                        <button class="play-game"
+                                data-game="Lost Kingdom">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                    <span class="game-tag">ADVENTURE</span>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div>
+                        <h3>LOST KINGDOM</h3>
+                        <p>Explore The Unknown</p>
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.9
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- GAME 5 -->
+            <article class="game-card" data-category="action">
+
+                <div class="game-image game-bg-5">
+
+                    <div class="game-overlay">
+
+                        <button class="play-game"
+                                data-game="Shadow Warrior">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                    <span class="game-tag">ACTION</span>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div>
+                        <h3>SHADOW WARRIOR</h3>
+                        <p>Become Invisible</p>
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.8
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- GAME 6 -->
+            <article class="game-card" data-category="racing">
+
+                <div class="game-image game-bg-6">
+
+                    <div class="game-overlay">
+
+                        <button class="play-game"
+                                data-game="Turbo X">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                    <span class="game-tag">RACING</span>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div>
+                        <h3>TURBO X</h3>
+                        <p>Ultimate Racing</p>
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.9
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURED -->
+    <section class="featured" id="featured">
+
+        <div class="featured-content">
+
+            <p class="section-tag">GAME OF THE WEEK</p>
+
+            <h2>GALACTIC <span>DOMINATION</span></h2>
+
+            <p>
+                Build your fleet, explore distant planets and
+                battle players from across the universe.
+            </p>
+
+            <button class="primary-btn play-featured">
+                Play Now
+                <i class="fa-solid fa-gamepad"></i>
+            </button>
+
+        </div>
+
+
+        <div class="featured-stats">
+
+            <div class="featured-stat">
+                <i class="fa-solid fa-users"></i>
+                <h3>125K</h3>
+                <p>Online Players</p>
+            </div>
+
+            <div class="featured-stat">
+                <i class="fa-solid fa-trophy"></i>
+                <h3>42</h3>
+                <p>Global Tournaments</p>
+            </div>
+
+            <div class="featured-stat">
+                <i class="fa-solid fa-earth-americas"></i>
+                <h3>120+</h3>
+                <p>Countries</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LEADERBOARD -->
+    <section class="leaderboard-section" id="leaderboard">
+
+        <div class="section-header">
+
+            <div>
+                <p class="section-tag">TOP PLAYERS</p>
+                <h2>GLOBAL <span>LEADERBOARD</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="leaderboard">
+
+            <div class="leader-row champion">
+
+                <div class="rank">01</div>
+
+                <div class="player">
+                    <div class="avatar">A</div>
+                    <div>
+                        <h3>AlphaStorm</h3>
+                        <p>Cyber Strike</p>
+                    </div>
+                </div>
+
+                <div class="score">
+                    <span>POINTS</span>
+                    <strong>98,450</strong>
+                </div>
+
+                <div class="trophy">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+
+            </div>
+
+
+            <div class="leader-row">
+
+                <div class="rank">02</div>
+
+                <div class="player">
+                    <div class="avatar">N</div>
+                    <div>
+                        <h3>NightX</h3>
+                        <p>Neon Racer</p>
+                    </div>
+                </div>
+
+                <div class="score">
+                    <span>POINTS</span>
+                    <strong>92,100</strong>
+                </div>
+
+                <div class="trophy">
+                    <i class="fa-solid fa-medal"></i>
+                </div>
+
+            </div>
+
+
+            <div class="leader-row">
+
+                <div class="rank">03</div>
+
+                <div class="player">
+                    <div class="avatar">Z</div>
+                    <div>
+                        <h3>ZeroBlade</h3>
+                        <p>Shadow Warrior</p>
+                    </div>
+                </div>
+
+                <div class="score">
+                    <span>POINTS</span>
+                    <strong>89,770</strong>
+                </div>
+
+                <div class="trophy">
+                    <i class="fa-solid fa-medal"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta-section">
+
+        <div class="cta-content">
+
+            <i class="fa-solid fa-gamepad"></i>
+
+            <h2>READY TO START?</h2>
+
+            <p>
+                Join thousands of players and enter the NEXUS ARENA.
+            </p>
+
+            <button class="primary-btn" id="joinBtn">
+                Join The Arena
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="about">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a href="#" class="logo">
+                    NEXUS<span>ARENA</span>
+                </a>
+
+                <p>
+                    Your gateway to the next generation
+                    of online gaming.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#games">Games</a>
+                <a href="#featured">Featured</a>
+                <a href="#leaderboard">Leaderboard</a>
+
+            </div>
+
+
+            <div class="social-links">
+
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-twitch"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 NEXUS ARENA. ALL SYSTEMS ONLINE.
+        </div>
+
+    </footer>
+
+
+    <!-- LOGIN MODAL -->
+    <div class="modal" id="loginModal">
+
+        <div class="modal-box">
+
+            <button class="modal-close" id="closeModal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-icon">
+                <i class="fa-solid fa-gamepad"></i>
+            </div>
+
+            <h2>WELCOME BACK</h2>
+
+            <p>Enter the arena and continue your journey.</p>
+
+            <form id="loginForm">
+
+                <input
+                    type="text"
+                    placeholder="Player Name"
+                    required
+                >
+
+                <input
+                    type="password"
+                    placeholder="Password"
+                    required
+                >
+
+                <button type="submit" class="primary-btn">
+                    Login To Arena
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- GAME MODAL -->
+    <div class="modal" id="gameModal">
+
+        <div class="modal-box game-modal-box">
+
+            <button class="modal-close" id="closeGameModal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="game-launch-icon">
+                <i class="fa-solid fa-gamepad"></i>
+            </div>
+
+            <h2 id="selectedGame">GAME</h2>
+
+            <p>
+                Game launching system is ready!
+            </p>
+
+            <div class="launch-loader">
+                <span></span>
+            </div>
+
+            <button class="primary-btn" id="launchGameBtn">
+                Launch Game
+                <i class="fa-solid fa-rocket"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
